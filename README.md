@@ -62,3 +62,5 @@ First we have hello-world-program before the colon, this part is known as the *t
 The second part after the colon is known as the *prerequisite* and this is an input that is used to generate the target. In this case so is the prerequisite the single source file hello-world.c.
 
 Indented by a tab below the target-colon-prerequisite we finally have the third part that is known as a *recipe*. A recipe is an action that **make** will carry out. In this case so is it a command to compile the hello-world application, and the command is the same that can be used directly in a terminal.
+
+There is no great benefit of using **make** to compile this small dummy program. But as we will see so are there great benefits of using **make** to build larger real-world applications.
