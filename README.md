@@ -2,9 +2,9 @@
 
 Having worked as a developer writing C code for nearly a decade now and have still not learned GNU **make** properly. Lets fix this now once and for all.
 
-GNU **make** is a tool that can be used for generation of an executable program from source files. I plan to use **make** when compiling C programs.
+GNU **make** is a tool that can be used for generation of an executable program from source files. I personally plan to use **make** to compile C programs.
 
-It should be noted that **make** is not by it self a compiler but will when it is executed commonly result in invocation of a compiler.
+It should be noted that **make** is not by it self a compiler but it is commonly use to invoke a compiler.
 
 GNU **make** is executed by the use of the shell command:
 
@@ -26,7 +26,7 @@ Assume that the following C source code have been written.
 
 int main (void)
 {
-  printf("Hello, world!\n");
+  printf("Hello world!\n");
   return 0;
 }
 
@@ -38,9 +38,19 @@ It can be compiled with GCC using the following instruction in a terminal.
 gcc -Wall hello-world.c -o hello-world
 ```
 
-Lets now instead see how the program can be compiled using **make**. We create a new file called *makefile* in the same folder that holds the source file hello-world.c. The content of the newly created *makefile* shall be:
+Lets now instead see how the program can be compiled using **make**. We create a new file called makefile in the same folder that holds the source file hello-world.c. The content of the newly created makefile shall be:
 
 ```make
-hello-world: hello-world.c
-	gcc -Wall hello-world.c -o hello
+hello-world-program: hello-world.c
+	gcc -Wall hello-world.c -o hello-world-program
 ```
+
+Note that the indentation shall be accomplished using a tab, not spaces.
+
+After saving the makefile so shall we in the terminal run the *make* utility by the use of the command make. If everything is correct so should the output be:
+
+```console
+gcc -Wall hello-world.c -o hello-world-program
+```
+
+And there should afterwards be a fresh new version of the application hello-world-program that make just built.

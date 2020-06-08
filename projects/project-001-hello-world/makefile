@@ -1,2 +1,2 @@
-hello-world: hello-world.c
-	gcc -Wall hello-world.c -o hello
+hello-world-program: hello-world.c
+	gcc -Wall hello-world.c -o hello-world-program
