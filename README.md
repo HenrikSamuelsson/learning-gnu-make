@@ -38,4 +38,9 @@ It can be compiled with GCC using the following instruction in a terminal.
 gcc -Wall hello-world.c -o hello-world
 ```
 
-Lets now instead see how the program can be compiled using **make**.
+Lets now instead see how the program can be compiled using **make**. We create a new file called *makefile* in the same folder that holds the source file hello-world.c. The content of the newly created *makefile* shall be:
+
+```make
+hello-world: hello-world.c
+	gcc -Wall hello-world.c -o hello
+```
