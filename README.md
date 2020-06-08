@@ -53,4 +53,12 @@ After saving the makefile so shall we in the terminal run the *make* utility by 
 gcc -Wall hello-world.c -o hello-world-program
 ```
 
-And there should afterwards be a fresh new version of the application hello-world-program that make just built.
+And there should afterwards be a fresh new version of the application hello-world-program that *make* just built.
+
+There are three different parts in the makefile.
+
+First we have hello-world-program before the colon, this part is known as the *target*. This parts is often the name of something that will be generated. In this case so is it an executable but it can also often be an object file.
+
+The second part after the colon is known as the *prerequisite* and this is an input that is used to generate the target. In this case so is the prerequisite the single source file hello-world.c.
+
+Indented by a tab below the target-colon-prerequisite we finally have the third part that is known as a *recipe*. A recipe is an action that **make** will carry out. In this case so is it a command to compile the hello-world application, and the command is the same that can be used directly in a terminal.
