@@ -58,7 +58,7 @@ And there should afterwards be a fresh new version of the application hello-worl
 The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects/project-001-hello-world/).
 
 
-## The Anamoty of Makefiles
+## The Anatomy of a Makefile
 
 A makefile will hold a set of *rules*, the first make file used in the previous section is so simple that it only holds a single rule and nothing else. There are commonly three different parts in a rule. Each of these three parts have a name that will be introduced in this section.
 
