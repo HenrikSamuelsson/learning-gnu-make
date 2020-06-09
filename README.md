@@ -63,4 +63,6 @@ The second part after the colon is known as the *prerequisite* and this is an in
 
 Indented by a tab below the target-colon-prerequisite we finally have the third part that is known as a *recipe*. A recipe is an action that **make** will carry out. In this case so is it a command to compile the hello-world application, and the command is the same that can be used directly in a terminal.
 
-There is no great benefit of using **make** to compile this small dummy program. But as we will see so are there great benefits of using **make** to build larger real-world applications.
+There is no great benefit of using **make** to compile this small dummy program. The benefits of using **make** comes when building larger real-world applications that includes many files and libraries.
+
+The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects\project-001-hello-world).
