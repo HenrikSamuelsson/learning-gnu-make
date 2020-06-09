@@ -65,4 +65,4 @@ Indented by a tab below the target-colon-prerequisite we finally have the third 
 
 There is no great benefit of using **make** to compile this small dummy program. The benefits of using **make** comes when building larger real-world applications that includes many files and libraries.
 
-The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects/project-001-hello-world).
+The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects/project-001-hello-world/).
