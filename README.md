@@ -1,10 +1,18 @@
 # Learning GNU Make
 
-Having worked as a developer writing C code for nearly a decade now and have still not learned GNU **make** properly. Lets fix this now once and for all.
+Having worked as a developer writing C code for nearly a decade now and have still not learned GNU Make properly. Lets fix this now once and for all.
 
-GNU **make** is a tool that can be used for generation of an executable program from source files. I personally plan to use **make** to compile C programs.
+## About GNU Make
 
-It should be noted that **make** is not by it self a compiler but it is commonly use to invoke a compiler.
+*GNU Make* is a tool that is useful when generating an executable program from the programs source files.
+
+Note that GNU Make is by itself not a compiler but it is often used to invoke a compiler.
+
+GNU Make will from now in this material be refereed to as just Make.
+
+## Installation
+
+Just like any other software so must Make be installed on the machine it is planned to be run on. Read [here](sub-sections/installation.md) for hints on how to get Make installed.
 
 GNU **make** is executed by the use of the shell command:
 
