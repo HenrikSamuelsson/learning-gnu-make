@@ -14,7 +14,7 @@ Note that GNU Make is by itself not a compiler but it is often used to invoke a 
 
 ## About This Material
 
-I am when starting out to write this material a beginner on GNU Make and basically learning in parallel while this is being written. So every thing will for sure not be correct especially if you happen to read one of the early versions of this material.
+I am when starting out to write this material a beginner on GNU Make and basically learning in parallel while this is being written. So everything will for sure not be correct especially if you happen to read one of the early versions.
 
 The material is written in a tutorial style way with exercises for the readers to attempt by themselves. Readers does not need to know anything about GNU Make but should have basic knowledge on terminal commands, also known as shell commands. Readers are also assumed to be somewhat proficient in the C programming language.
 
