@@ -1,7 +1,6 @@
 # Learning GNU Make
 
-Written by Henrik Samuelsson
-Version 0.1
+By Henrik Samuelsson, version 0.1
 
 ## Background
 
