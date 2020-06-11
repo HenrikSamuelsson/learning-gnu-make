@@ -1,5 +1,10 @@
 # Learning GNU Make
 
+Written by Henrik Samuelsson
+Version 0.1
+
+## Background
+
 Having worked as a developer writing C code for nearly a decade now and have still not learned GNU Make properly. Lets fix this now once and for all.
 
 ## About GNU Make
@@ -8,25 +13,31 @@ Having worked as a developer writing C code for nearly a decade now and have sti
 
 Note that GNU Make is by itself not a compiler but it is often used to invoke a compiler.
 
+## About This Material
+
+I am when starting out to write this material a beginner on GNU Make and basically learning in parallel while this is being written. So every thing will for sure not be correct especially if you happen to read one of the early versions of this material.
+
+The material is written in a tutorial style way with exercises for the readers to attempt by themselves. Readers does not need to know anything about GNU Make but should have basic knowledge on terminal commands, also known as shell commands. Readers are also assumed to be somewhat proficient in the C programming language.
+
 GNU Make will from now in this material be refereed to as just Make.
 
 ## Installation
 
 Just like any other software so must Make be installed on the machine it is planned to be run on. Read [here](sub-sections/installation.md) for hints on how to get Make installed.
 
-GNU **make** is executed by the use of the shell command:
+Make is started by the following terminal command:
 
 ```console
-make
+> make
 ```
 
-Execution of **make** requires a file called *makefile* that holds instructions for what shall be done. The makefile is typically written by the developers of a software during the development phase.
+Execution of Make requires a text file that with the name *makefile* that holds instructions for what shall be done. The makefile is typically written by software developers in parallel with writing code for the software as a part of the development process.
 
 The content of a makefile is based around a type of instruction known as a *rule*. In the next section so will a makefile be constructed with a rule to compile a C program.
 
 ## Compiling Hello World
 
-Assume that the following C source code have been written.
+Assume that the following C source code have been developed and is now to be compiled.
 
 ```C
 /* hello-world.c */
@@ -46,7 +57,7 @@ It can be compiled with GCC using the following instruction in a terminal.
 gcc -Wall hello-world.c -o hello-world
 ```
 
-Lets now instead see how the program can be compiled using **make**. We create a new file called makefile in the same folder that holds the source file hello-world.c. The content of the newly created makefile shall be:
+Lets now instead see how the program can be compiled using Make. We create a new file called makefile in the same folder that holds the source file hello-world.c. The content of the newly created makefile shall be:
 
 ```make
 hello-world-program: hello-world.c
@@ -64,7 +75,6 @@ gcc -Wall hello-world.c -o hello-world-program
 And there should afterwards be a fresh new version of the application hello-world-program that *make* just built.
 
 The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects/project-001-hello-world/).
-
 
 ## The Anatomy of a Makefile
 
