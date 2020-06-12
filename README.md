@@ -28,7 +28,7 @@ Just like any other software so must Make be installed on the machine it is plan
 
 Assuming that Make have been installed so can you now go the following [subsection](subsections/running-make) where Make will be taken for an initial test run.
 
-Execution of Make requires a text file that with the name *makefile* that holds instructions for what shall be done. The makefile is typically written by software developers in parallel with writing code for the software as a part of the development process.
+
 
 The content of a makefile is based around a type of instruction known as a *rule*. In the next section so will a makefile be constructed with a rule to compile a C program.
 
