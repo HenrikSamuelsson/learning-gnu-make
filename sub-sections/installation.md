@@ -33,9 +33,9 @@ Or try one of the ways described in the below subsections.
 
 There are various ways to get Make on a Windows machine although most of the ways will take a little effort.
 
-On way to get access to Make in Windows is to use [Cygwin](https://cygwin.com/index.html), see this [question](https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment?rq=1) on Stackoverflow.
+On way to get access to Make in Windows is to use [Cygwin](https://cygwin.com/index.html), see this [question](https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment?rq=1) on Stack Overflow.
 
-Another similar alternative to Cygwin is a [mingw-w64](http://mingw-w64.org/), see also this [question](https://stackoverflow.com/questions/42752721/mingw-64-ships-without-make-exe) on Stackoverflow.
+Another similar alternative to Cygwin is [Mingw-w64](http://mingw-w64.org/), see also this [question](https://stackoverflow.com/questions/42752721/mingw-64-ships-without-make-exe) on Stack Overflow.
 
 On Windows there is also always the option to run a Linux on a virtual machine and do your development this way. It is however beyond the scope of this material to even try to suggest the best way to achieve this.
 
@@ -54,3 +54,21 @@ For example if on Ubuntu try the following command that install make along with 
 ## MacOS
 
 Have never really used an Apple computer and also not really sure if Make is relevant or not in this sphere so will refrain from even trying to help out on this environment.
+
+## Exercises
+
+### Exercise 1
+
+Install GNU Make on your machine. Search online for instructions or follow the instructions from above.
+
+### Exercise 2
+
+Check what version of GNU Make you have installed on your machine by the use of the following terminal command.
+
+```console
+> make --version
+```
+
+### Exercise 3
+
+Find out the version number of the latest released version of GNU Make and see how it compares to the version you have installed. Hint, search online for "GNU make changelog" or "GNU make ftp mirror list" and explore the hits.
