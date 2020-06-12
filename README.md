@@ -28,8 +28,6 @@ Just like any other software so must Make be installed on the machine it is plan
 
 Assuming that Make have been installed so can you now go the following [section](sub-sections/running-make.md) where Make will be taken for an initial test run.
 
-
-
 The content of a makefile is based around a type of instruction known as a *rule*. In the next section so will a makefile be constructed with a rule to compile a C program.
 
 ## Compiling Hello World

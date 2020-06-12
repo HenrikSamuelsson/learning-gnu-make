@@ -6,9 +6,11 @@ Make can be started by the following terminal command.
 > make
 ```
 
+We will in the exercise in this section intentionally do some incomplete runs of Make to learn a little about what Make expects as input and the different types of output messages produced by Make.
+
 ## Exercise 1
 
-We will in this exercise intentionally make a mistake when running make to learn about the error message. Create a new empty folder somewhere on your computer, hint on how to achieve this below.
+Create a new empty folder somewhere on your computer, hint on how to achieve this below.
 
 ```console
 > mkdir running-make
@@ -28,7 +30,7 @@ Now enter the new folder and verify that it is empty by listing the contents.
 ```console
 > cd running-make
 > ls
->
+
 ```
 
 Finally run Make from inside the empty folder.
