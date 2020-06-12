@@ -26,7 +26,7 @@ Just like any other software so must Make be installed on the machine it is plan
 
 ## Running Make
 
-Assuming that Make have been installed so can you now go the following [subsection](subsections/running-make.md) where Make will be taken for an initial test run.
+Assuming that Make have been installed so can you now go the following [section](sub-sections/running-make.md) where Make will be taken for an initial test run.
 
 
 
