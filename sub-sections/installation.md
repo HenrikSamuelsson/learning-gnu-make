@@ -66,7 +66,7 @@ Install GNU Make on your machine. Search online for instructions or follow the i
 Check what version of GNU Make you have installed on your machine by the use of the following terminal command.
 
 ```console
-> make --version
+> make -version
 ```
 
 ### Exercise 3

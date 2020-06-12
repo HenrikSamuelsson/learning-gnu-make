@@ -24,11 +24,9 @@ GNU Make will from now in this material be refereed to as just Make.
 
 Just like any other software so must Make be installed on the machine it is planned to be run on. Read [here](sub-sections/installation.md) for hints on how to get Make installed.
 
-Make is started by the following terminal command:
+## Running Make
 
-```console
-> make
-```
+Assuming that Make have been installed so can you now go the following [subsection](subsections/running-make) where Make will be taken for an initial test run.
 
 Execution of Make requires a text file that with the name *makefile* that holds instructions for what shall be done. The makefile is typically written by software developers in parallel with writing code for the software as a part of the development process.
 
