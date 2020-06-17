@@ -37,4 +37,4 @@ gcc hello-world.c -o hello-world-program
 
 And there should afterwards be a fresh new version of the application hello-world-program that was just built when GCC was invoked by Make.
 
-The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects/project-001-hello-world/).
+The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](../projects/project-001-hello-world/).
