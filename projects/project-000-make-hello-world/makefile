@@ -1,1 +1,2 @@
-$(info Hello world!)
+make_hello_world:
+	$(info Hello world!)
