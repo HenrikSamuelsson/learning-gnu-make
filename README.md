@@ -32,44 +32,7 @@ The content of a makefile is based around a type of instruction known as a *rule
 
 ## Compiling Hello World
 
-Assume that the following C source code have been developed and is now to be compiled.
-
-```C
-/* hello-world.c */
-#include <stdio.h>
-
-int main (void)
-{
-  printf("Hello world!\n");
-  return 0;
-}
-
-```
-
-It can be compiled with GCC using the following instruction in a terminal.
-
-```console
-gcc -Wall hello-world.c -o hello-world
-```
-
-Lets now instead see how the program can be compiled using Make. We create a new file called makefile in the same folder that holds the source file hello-world.c. The content of the newly created makefile shall be:
-
-```make
-hello-world-program: hello-world.c
-	gcc -Wall hello-world.c -o hello-world-program
-```
-
-Note that the indentation shall be accomplished using a tab, not spaces.
-
-After saving the makefile so shall we in the terminal run the *make* utility by the use of the command make. If everything is correct so should the output be:
-
-```console
-gcc -Wall hello-world.c -o hello-world-program
-```
-
-And there should afterwards be a fresh new version of the application hello-world-program that *make* just built.
-
-The source code and makefile discussed in this section can be found in the folder [project-001-hello-world](projects/project-001-hello-world/).
+Make is often used to compile C-programs. In this [section](sub-sections/compile-hello-world.md) is it explained how to compile a simple C-program by the use of Make and GCC.
 
 ## The Anatomy of a Makefile
 
@@ -79,9 +42,9 @@ First we have written hello-world-program before the colon. This part of the rul
 
 The second part after the colon is known as the *prerequisites*. This part defines inputs that is used to generate the target. In this case so is the prerequisites the single source file hello-world.c.
 
-Indented by a tab below the target-colon-prerequisite we finally have the third part that is known as a *recipe*. A recipe is an action that **make** will carry out. In this case so is it a command to compile the hello-world application. This is just the same command that can be used directly in a terminal. There is a single recipe in this rule but a rule is not limited to hold a single recipe. Additional recipes can be added below and each recipe shall be intended using a tab.
+Indented by a tab below the target-colon-prerequisite we finally have the third part that is known as a *recipe*. A recipe is an action that Make will carry out. In this case so is it a command to compile the hello-world application. This is just the same command that can be used directly in a terminal. There is a single recipe in this rule but a rule is not limited to hold a single recipe. Additional recipes can be added below and each recipe shall be intended using a tab.
 
-There is no great benefit of using **make** to compile this small dummy program. The benefits of using **make** comes when building larger real-world applications that includes many files and libraries.
+There is no great benefit of using Make to compile this small dummy program. The benefits of using Make comes when building larger real-world applications that includes many files and libraries.
 
 ## Clean-up Recipe
 
